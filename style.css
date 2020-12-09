@@ -1,27 +1,36 @@
-header h1 {
-  background: url(images/goldengatebridge.jpg);
-  background-size: cover;
-  height: 300px;
-  margin: 0px;
-  padding-top: 50px;
-}
+/*header*/
 
 h1 {
   color: whitesmoke;
   font-family: cursive, 'Times New Roman';
   font-size: 100px;
   text-align: center;
-
-hr {
-  margin: 25px;
-}  
 }
+hr {
+  margin: auto;
+}  
+/*body*/
+
 body {
   margin: 0;
   background: url(images/background.png);
   background-size: cover;
 }
+/*image alignment*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
 main > div > article > section > header > h2 {
+  color: whitesmoke;
+  font-size: 24px;
+  text-align: center;
+}
+
+main > div > article > section > header > h3 {
   color: whitesmoke;
   font-size: 24px;
   text-align: center;
@@ -46,7 +55,7 @@ footer {
 }
 
 /* Link Colors */
-a:link    { color: white);  }
+a:link    { color: white; }
 a:visited { color: darkblue; }
 a:hover   { color: blueviolet; }
 a:active  { color: lightskyblue; }
