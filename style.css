@@ -1,3 +1,7 @@
+/*universal box sizing with inheritance*/
+
+
+
 /*header*/
 
 h1 {
@@ -18,11 +22,10 @@ body {
 }
 /*image alignment*/
 .center {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 100px;
   padding-left: 500px;
   width: 20%;
-  height: 40%;
+  height: 30%;
 }
 
 main > div > article > section > header > h2 {
