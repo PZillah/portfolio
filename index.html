@@ -1,82 +1,174 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Priscilla's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Priscilla Kung | Software Developer | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
+  <body>
+    <!-- Header/Nav-->
+    <header>
+      <div class="logo"><strong>Priscilla Kung</strong></div>
+      <nav id="top">
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-<!-- Header/Nav-->
-  <header id = "home">
-    <h1>Priscilla Kung</h1>
-      <div>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-  </header>
+    <!-- Main content-->
 
-<!-- Main content-->
-
-<main>
-  <article>
-    <div>
+    <main>
+      <!--Intro section-->
       <section>
-        <header>
-          <h2>Intro</h2>
-        </header>
-          <p>Hi! Priscilla Kung here from the San Francisco Bay Area.  <br>I am a website developer excited to bring websites to life.</p>
+        <div class="group">
+          <div class="item">
+            <img
+              class="img"
+              src="images/portrait.jpg"
+              alt="Priscilla Kung profile photo"
+            />
+          </div>
+          <div class="item">
+            <h1>Hi! I am Priscilla Kung.</h1>
+            <p>
+              Let me introduce myself. I was born and raised in the Bay Area. In
+              2019, I left San Francisco due to high cost of living and yes I
+              was part of the exodus. Currently, I reside in a small and lovely
+              suburban college town in Northern California.
+            </p>
+            <p>
+              All human beings were created as containers to be filled with
+              something special. When I tap into that something, I am capable of
+              becoming that. At this stage of life, I am a software engineering
+              student at Thinkful boot camp. Watch out world! Priscilla is
+              becoming a software engineer!
+            </p>
+            <img
+              class="img"
+              src="images/goldengatebridge.jpg"
+              alt="golden gate bridge"
+            />
+          </div>
+        </div>
       </section>
-    </div>
-<hr style="width:50%"> 
-  <div>      
-    <section id = "about">
-      <header>
-        <h2>About Priscilla</h2>
-      </header>
-        <p>I am continually learning and immersing myself in software engineering.
-        <br>I am passionate about making a difference in the education technology industry.
-        <br>If I'm not building websites, I am probably working on my Amazon store.</p>
-          <ul>Things I'm into:
-            <li>Mysteries</li>
-            <li>Baking</li>
-            <li>Puzzles</li>
-            <li>Survivor</li>
-          </ul>
-    </section>
-  </div>  
-<hr style="width:50%">
-  <div>         
-      <section id = "contact">
-        <header>
-          <h2>Contact Priscilla</h2>
-        </header>
-            <ol>
-              <li><a href="https://www.linkedin.com/in/priscillakung/">LinkedIn</a></li>
-              <li><a href="https://github.com/PZillah">Github</a></li>
-            </ol>
+
+      <!--About Me section-->
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="group">
+          <div class="item">
+            <p>
+              "There is no secret to sucess. It is the result of preparation,
+              hard work, and learning from failure." This quote encapsulates my
+              career as I transition from the higher education industry to the
+              education technology industry. Making fun websites that help
+              children learn and grow to become whatever they want to be is my
+              dream. I am excited to collaborate with an awesome team of great
+              programmers so that together we can gamify the learning experience
+              and make learning fun.
+            </p>
+            <p>
+              When I'm not coding, you'll probably catch me checking up on my
+              Amazon seller app every few hours, watching YouTube videos on
+              coding, exercising with my Oculus or find me baking chocolate chip
+              cookies.
+            </p>
+          </div>
+        </div>
       </section>
-    </article>
-  </div> 
-</main>
 
-<!--footer-->
+      <!--Project section-->
+      <section>
+        <h2>Portfolio</h2>
+        <div class="group">
+          <div class="item">
+            <h3>Guess The Number App</h3>
+            <p>
+              This is a simple number guessing game for anyone who likes to play
+              guessing games. I built this app when I first started learning
+              about Javascript online. I learned about making functions,
+              conditional statements, switch cases, and adding event listeners
+              and event handlers. Skills used include Javascript, CSS, and HTML.
+            </p>
+            <div>
+              <a href="https://pzillah.github.io/Guess-the-number-game/"
+                >Play the game!</a
+              >
+              <a href="https://github.com/PZillah/Guess-the-number-game"
+                >GitHub repo</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer>
-  <div>
-    <nav>
-      <p>copyright 2020 Priscilla Kung</p>
-      <a href="#home">Back To Top</a>
-    </nav>
-  </div>
-</footer>
+      <!--Contact section-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="group">
+          <div class="item">
+            <form action="https://formspree.io/f/meqpbjoq" method="POST">
+              <label for="user-name">Name:</label>
+              <input
+                id="user-name"
+                type="text"
+                name="name"
+                placeholder="Full name here"
+              />
 
-<script src="script.js"></script>
-</body>
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="email" />
+
+              <label for="user-message">Message:</label>
+              <textarea id="user-message" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="item">
+            <div>
+              <ul>
+                <li>
+                  <a href="mailto:priscillakung@gmail.com" target="”_blank”"
+                    >Email Me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/priscillakung/"
+                    target="”_blank”"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/PZillah" target="”_blank”"
+                    >Github</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+      <a href="#top">Back To Top</a>
+      <p>copyright 2021 | Priscilla Kung</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

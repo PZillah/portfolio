@@ -1,53 +1,160 @@
-header h1 {
-  background: url(images/goldengatebridge.jpg);
-  background-size: cover;
-  height: 500px;
-  margin: 0px;
-  padding-top: 50px;
+/***** header/nav rules *****/
+
+header {
+  background-color: lightgray;
+  margin-bottom: 40px;
 }
 
-h1 {
-  color: whitesmoke;
-  font-family: cursive, 'Times New Roman';
-  font-size: 100px;
+.logo {
+  color: black;
+  font-family: cursive, "Times New Roman";
+  font-size: 72px;
   text-align: center;
-} 
+  margin: 0;
+  padding: 20px 0 0 0;
+}
 
-nav {
-  text-align: center;
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/***** main rules *****/
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
 }
 
 body {
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   background: url(images/background.png);
   background-size: cover;
 }
-div header {
-  color: whitesmoke;
-  font-size: 24px;
-  text-align: center;
+
+.item ul li {
+  list-style-type: none;
 }
 
-section {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-  margin-right: 100px;
-  margin-left: 100px;
-  padding: 25px 10px 25px 10px;
-  text-align: center;
+.item ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
-ul, ol {
-margin-right: 750px;
-margin-left: 600px;
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
 }
 
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+/***** footer rules *****/
 footer {
+  background-color: lightgray;
+  margin-top: 20px;
+  margin-bottom: 0;
   text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 0 20px 0 0;
 }
 
 /* Link Colors */
-a:link    { color: white;  }
-a:visited { color: darkblue; }
-a:hover   { color: blueviolet; }
-a:active  { color: lightskyblue; }
+a:link {
+  color: white;
+}
+a:visited {
+  color: darkblue;
+}
+a:hover {
+  color: blueviolet;
+}
+a:active {
+  color: lightskyblue;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
