@@ -31,7 +31,6 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -97,7 +96,6 @@ body {
 }
 
 .item ul li a {
-  color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -124,6 +122,20 @@ form textarea {
   height: 160px;
 }
 
+/* Link Colors */
+a:link {
+  color: darkblue;
+}
+a:visited {
+  color: teal;
+}
+a:hover {
+  color: blueviolet;
+}
+a:active {
+  color: white;
+}
+
 /***** footer rules *****/
 footer {
   background-color: lightgray;
@@ -140,19 +152,7 @@ footer a {
   padding-top: 20px
 }
 
-/* Link Colors */
-a:link {
-  color: white;
-}
-a:visited {
-  color: darkblue;
-}
-a:hover {
-  color: blueviolet;
-}
-a:active {
-  color: lightskyblue;
-}
+
 
 /* ---  (Desktop) Groups & Items --- */
 
